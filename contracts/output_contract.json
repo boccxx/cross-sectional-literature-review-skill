@@ -1,0 +1,131 @@
+{
+  "delivery_presets": [
+    "brief",
+    "decision_grade",
+    "full_package"
+  ],
+  "review_types": [
+    "structured_narrative",
+    "systematic_no_meta",
+    "systematic_meta"
+  ],
+  "project_modes": [
+    "research",
+    "applied_methods",
+    "workflow_methods"
+  ],
+  "required_outputs": [
+    "search_log.csv",
+    "candidate_records_raw.csv",
+    "candidate_records_dedup.csv",
+    "screening_decisions.csv",
+    "study_registry.csv",
+    "measurement_registry.csv",
+    "confounder_registry.csv",
+    "citation_registry.json",
+    "evidence_to_decision_table.csv",
+    "evidence_sufficiency_report.json",
+    "review_contract.json",
+    "review_briefing.md",
+    "search_strategy.md",
+    "proposal_bridge.md",
+    "research_gaps.md",
+    "related_work.md",
+    "protocol_inputs.json",
+    "literature_review_synthesis.md"
+  ],
+  "conditional_outputs": {
+    "all_completed_reviews": [
+      "claim_registry.csv",
+      "fulltext_inventory.csv",
+      "quality_appraisal_registry.csv"
+    ],
+    "treatment_strategy_comparison": [
+      "effect_registry.csv",
+      "bias_registry.csv"
+    ],
+    "prognosis_decision_or_protocol_support": [
+      "effect_registry.csv",
+      "bias_registry.csv"
+    ],
+    "exposure_outcome_association": [
+      "effect_registry.csv"
+    ],
+    "full_package": [
+      "references.bib",
+      "publication_manifest.json",
+      "delivery_quality_report.json",
+      "literature_review.tex",
+      "literature_review.docx",
+      "literature_review.pdf",
+      "citation_verification_report.csv"
+    ]
+  },
+  "required_registries": [
+    "study_registry.csv",
+    "measurement_registry.csv",
+    "confounder_registry.csv",
+    "citation_registry.json",
+    "evidence_to_decision_table.csv",
+    "evidence_sufficiency_report.json",
+    "claim_registry.csv"
+  ],
+  "required_fields": {
+    "review_contract.json": [
+      "contract_version",
+      "review_type",
+      "reporting_framework",
+      "synthesis_method",
+      "project_mode",
+      "question_type",
+      "review_goal",
+      "design_type",
+      "generated_at",
+      "status",
+      "downgrade_state",
+      "topic",
+      "primary_estimand",
+      "evidence_sufficiency",
+      "decision_ids",
+      "citation_ids",
+      "deliverable_style",
+      "narrative_readiness",
+      "anchor_density_by_outcome"
+    ],
+    "citation_registry.json": [
+      "citation_id",
+      "reference_number",
+      "paper_id",
+      "title",
+      "narrative_role",
+      "claim_supported",
+      "supporting_decision_ids",
+      "supporting_evidence_row_ids"
+    ],
+    "evidence_sufficiency_report.json": [
+      "level",
+      "notes",
+      "evidence_density",
+      "design_mix",
+      "measurement_support",
+      "confounder_support",
+      "gap_confidence",
+      "design_fit",
+      "causal_temporality_risk",
+      "estimand_feasibility",
+      "interpretation_risk",
+      "mode_recommendation",
+      "downgrade_reason"
+    ],
+    "claim_registry.csv": [
+      "claim_id",
+      "outcome_family",
+      "claim_text",
+      "allowed_strength",
+      "anchor_required",
+      "supports_primary_direction_claim",
+      "eligible_anchor_paper_ids",
+      "supporting_paper_ids"
+    ]
+  }
+}
